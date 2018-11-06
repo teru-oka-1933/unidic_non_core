@@ -1,2 +1,3 @@
-# unidic_non_core
-UniDic非コアデータ
+# UniDic非コアデータ
+
+本サイトでは、短単位自動解析用辞書「UniDic」のアペンドデータを公開しています。
