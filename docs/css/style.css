@@ -1,0 +1,458 @@
+@charset "utf-8";
+
+/* =============================================== 共通 ===================================================== */
+
+/* ========================== html ========================== */
+html {
+    background-color: #0d2d4b;
+    font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+/* ========================== /html ========================== */
+
+
+/* ========================== body ========================== */
+body {
+    background-image: url(../image/title_back.png);
+    white-space: nowrap;
+    margin: 0 auto 0 auto;
+    /* 画面幅せばめたときに，htmlの色が食い込んでくるのを止める用， */
+    width: 1000px;
+    min-width: 1000px;
+}
+/* ========================== /body ========================== */
+
+/* ========================== header ========================== */
+#overline {
+    background-image: url(../image/overline_46_46_46.png);
+    height: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 750px;
+}
+
+header {
+    background-image: url(../image/title_back.png);
+    width: 900px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ========================== /header ========================== */
+
+
+/* ========================== nav ========================== */
+nav {
+    background-color: #1c63a4;
+    width: 900px;
+    min-width:900px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    /* どうやら，borderを設定しないとborder-radiusは発動しないらしい… */
+    border-top-color: #154878;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-color: #154878;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 14px;
+}
+
+nav li span{
+    font-size: 16px;
+    /* 文字を中央ぞろえに調整している */
+    padding-right: 4px;
+    padding-left: 4px;
+    /* がんばって，「ここにいるラインをspan直下にだけ出せるように工夫している」 */
+    padding-top: 3px;
+    padding-bottom: 5px;
+    line-height: 20px;
+}
+
+nav li span a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li span a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+nav li span a:visited {
+    color: #ffffff;
+}
+
+/* このページにいるという目印 */
+#nav_here {
+    border-bottom-color: #ffcc00;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+/* ========================== /nav ========================== */
+
+/* ========================== main ========================== */
+main {
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#main_contents {
+    width: 900px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    padding-top: 1px;
+}
+/* ========================== /main ========================== */
+
+/* ========================== footer ========================== */
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #0d2d4b;
+    color: #ffffff;
+    border-top-color: #cccccc;
+    border-top-style: solid;
+    border-top-width: 1px;
+}
+
+#footer_content {
+    width: 900px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer_ccd { /* 「コーパス開発センター￥ｎCenter for～」ってところ*/
+    border-bottom-color: #ffffff;
+    border-bottom-width: 1px;
+    border-bottom-style:solid;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+
+#footer_address { /* 連絡先 */
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-bottom: 10px;
+}
+
+#footer_copyright {
+    padding-left: 180px;
+}
+
+#footer_validator {
+    padding-left: 380px;
+}
+/* ========================== /footer ========================== */
+
+
+
+/* ========================== article ========================== */
+
+.article {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+.article_title {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    background-color: #0d2d4b;
+    font-size: 20px;
+    color: #ffffff;
+    border-color: #0d2d4b;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.article_title_downloads {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    /* background-color: #00d2d2; */
+    font-size: 20px;
+    /* color: #f9f9f9; */
+    color: #666666;
+    /* border-color: #00d2d2; */
+    /* border-width: 1px; */
+    /* border-style: solid; */
+    border-bottom-width: 5px;
+    border-bottom-color: #00d2d2;
+    border-bottom-style: solid;
+}
+
+.article_sub_title {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    background-color: #154878;
+    font-size: 18px;
+    color: #ffffff;
+    border-color: #154878;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.article_sub_sub_title {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 13px;
+    padding-bottom: 5px;
+    background-color: #636b70;
+    font-size: 16px;
+    color: #ffffff;
+    border-color: #636b70;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.article_content {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: normal;
+    color: #494949;
+    line-height: 1.8em;
+    letter-spacing: 0.6pt;
+    font-size: 1em;   
+}
+
+.article_text_enph {
+    color:#050505;
+/*    color:#000000;*/
+/* border-top:1px solid #ffffff; border-left:1px solid #ffffff; border-right:1px solid #ffffff; */
+/*    border-bottom: 1px solid #000000; */
+}
+
+.article_text_caution {
+    color:#ff0000;
+}
+
+.div_for_short_quotation_table {
+    background-color: #efefef;
+    height: 100px;
+    padding-top: 30px;
+}
+
+.quotation_table {
+    background-color: #efefef;
+    white-space: normal;
+    color: #494949;
+}
+
+.quotation_table_mark_start {
+    font-size: 100px;
+    color: #cccccc;
+    vertical-align: center;
+    font-family: serif;
+}
+
+.quotation_table_mark_end {
+    font-size: 100px;
+    color: #cccccc;
+    vertical-align: center;
+    font-family: serif;
+}
+
+/* ========================== /article ========================== */
+
+
+/* ========================== pre ========================== */
+pre {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #cccccc;
+    padding-left: 10px;
+    white-space: pre-wrap;
+}
+/* ========================== /pre ========================== */
+
+/* =============================================== /共通 ===================================================== */
+
+
+/* =============================================== Home ====================================================== */
+
+#home_latest_version_buttons_area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 860px;
+    min-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#home_latest_version_buttons_table {
+    width: 850px;
+    min-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tweet {
+    text-align: right;
+    padding-right: 40px;
+}
+
+.tweet a:link {
+    color: #0088ff;
+    text-decoration: none;
+}
+
+.tweet a:hover {
+    color: #0088ff;
+    text-decoration: underline;
+}
+
+.tweet a:visited {
+    color: #0088ff;
+    text-decoration: none;
+}
+
+
+
+#home_news_area {
+    margin-left: 25px;
+    width: 850px;
+    min-width: 850px;
+}
+
+#home_news_area_title {
+    background-color: #154878;
+    color: #ffffff;
+    padding-bottom:5px;
+}
+
+#home_news_list_area {
+    max-height: 400px;
+    border-top-color: #dcdcdc;
+    border-top-width: 1px;
+    border-top-style:solid;
+    border-bottom-color: #dcdcdc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    overflow-y: scroll;
+}
+
+#news_list {
+    border-collapse: collapse;
+}
+
+.news_content {
+    border-bottom-color: #dcdcdc;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.news_content_date {
+    width: 120px;
+    font-size: 11pt;
+    vertical-align: top;
+    color: #404040;
+}
+
+.news_content {
+    width: 700px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    white-space: normal;
+    font-size: 12pt;
+    color: #404040;
+}
+
+/* =============================================== /Home ====================================================== */
+
+
+/* =============================================== Download ====================================================== */
+
+.unidic_bccwj_title {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-color: #154878;
+    font-size: 22pt;
+    color: #ffffff;
+    border-left-color: #0d2d4b;
+    border-left-width: 30px;
+    border-left-style: solid;
+}
+
+.unidic_csj_title {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-color: #cc599e;
+    font-size: 22pt;
+    color: #ffffff;
+    border-left-color: #c33d8d;
+    border-left-width: 30px;
+    border-left-style: solid;
+}
+
+.unidic_chj_title {
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    background-color: #316068;
+    font-size: 22pt;
+    color: #ffffff;
+    border-left-color: #203f44;
+    border-left-width: 30px;
+    border-left-style: solid;
+}
+
+.lineup_table {
+    border-collapse: collapse;
+}
+
+.lineup_td_description {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.lineup_td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+/* =============================================== /Download ====================================================== */
+
+
+
+
+
+/* ========================== Back Number ========================== */
+
+.download_table {
+    border-collapse: collapse;
+}
+
+.download_th, .download_td {
+    /* border: 1px solid #00d2d2; */
+    border: 1px solid #cccccc;
+    padding: 10px;
+}
+
+
+
+/* ========================== /Back Number ========================== */
+
+
