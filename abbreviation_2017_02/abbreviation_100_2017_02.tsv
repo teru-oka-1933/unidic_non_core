@@ -1,0 +1,36 @@
+# abbr_aggregation_2017_02.tsvの集計を基に抽出した原言語からの省略形を内部に含む短単位語彙素
+# abbr_aggregation_2017_02.tsvでabbの割合がabb+!abbの100％以上のものを列挙した。
+# 本tsvファイルの列名は以下の通り。ただし、この行のように、「#」で始める行はコメント行。
+#語彙素ID	原言語側で２つの部分に分割できるカタカナ「語彙素」	当該語彙素の原言語側での表記（スペース区切り）	原言語側の分割に従って分割した語彙素の前部	語彙素原言語側表記での前部	語彙素前部中で原言語からの省略が起きているか（abb）否か（!abb）	原言語側の分割に従って分割した語彙素の後部	語彙素原言語側表記での後部	語彙素前部中で原言語からの省略が起きているか（abb）否か（!abb）
+18853	ジーパン	jeans pants	ジー	jeans	abb	パン	pants	!abb
+19386	スフ	staple fibre	ス	staple	abb	フ	fibre	abb
+20134	セクハラ	sexual harassment	セク	sexual	abb	ハラ	harassment	abb
+30384	ハンスト	hunger strike	ハン	hunger	abb	スト	strike	abb
+30953	パソコン	personal computer	パソ	personal	abb	コン	computer	abb
+30983	パトカー	patrol car	パト	patrol	abb	カー	car	!abb
+35664	マザコン	mother complex	マザ	mother	!abb	コン	complex	abb
+41403	ワープロ	word processor	ワー	word	!abb	プロ	processor	abb
+41981	アメフト	American football	アメ	American	abb	フト	football	abb
+44003	アメフェス	American festival	アメ	American	abb	フェス	festival	abb
+44263	スタジャン	stadium jumper	スタ	stadium	abb	ジャン	jumper	abb
+83756	バリコン	variable condenser	バリ	variable	abb	コン	condenser	abb
+120834	スパコン	super computer	スパ	super	!abb	コン	computer	abb
+138959	アカハラ	academic harassment	アカ	academic	!abb	ハラ	harassment	abb
+156404	イメクラ	image club	イメ	image	abb	クラ	club	abb
+160153	カメリハ	camera rehearsal	カメ	camera	abb	リハ	rehearsal	abb
+164379	モガ	modern girl	モ	modern	abb	ガ	girl	abb
+175601	エンプラ	engineering plastic	エン	engineering	abb	プラ	plastic	abb
+181953	エレアコ	electric acoustic	エレ	electric	abb	アコ	acoustic	abb
+181997	ジージャン	jeans jumper	ジー	jeans	abb	ジャン	jumper	!abb
+182020	セフレ	sex friend	セ	sex	abb	フレ	friend	!abb
+183025	インパネ	instrumental panel	イン	instrumental	abb	パネ	panel	!abb
+185751	スケブ	sketch book	スケ	sketch	!abb	ブ	book	abb
+186972	マスコン	Master controller	マス	Master	!abb	コン	controller	abb
+187057	ソニプラ	Sony plaza	ソニ	Sony	!abb	プラ	plaza	abb
+191220	プリカ	prepaid card	プリ	prepaid	abb	カ	card	!abb
+220939	リゾカジ	resort casino	リゾ	resort	abb	カジ	casino	!abb
+229527	エアサス	air suspension	エア	air	!abb	サス	suspension	abb
+231844	ブラコン	brother complex	ブラ	brother	abb	コン	complex	abb
+240486	マケスピ	market speed	マケ	market	abb	スピ	speed	abb
+240876	ポケコン	pocket computer	ポケ	pocket	abb	コン	computer	abb
+257925	シスコン	sister complex	シス	sister	!abb	コン	complex	abb
