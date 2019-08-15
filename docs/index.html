@@ -1,149 +1,242 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!doctype html>
 
-
-<html>
-
+<html lang="ja">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<title>UniDic非コアデータ</title>
+	<meta charset="UTF-8">
+	<!-- ページタイトル -->
+	<title>UniDic非コアデータ</title>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 
 
 <body>
 
-<!--タイトル-->
-<h1><a name="top">UniDic非コアデータ</a></h1>
-<hr>
+<div id="top"></div>
+<div id="overline">Edge, Chrome, Safari, Firefox推奨</div>
+<header>
+	<img id="unidic_noncore_rogo" src="image/unidic_noncore_rogo.png" alt="UniDic非コアデータのロゴ" style="padding-left:260px">
+</header>
 
-<div>
-<p>
-  本サイトでは、短単位自動解析用辞書「UniDic」のアペンドデータを公開していきます。<br><br>
-
-  「非コア」データというフレーズには、UniDicの短単位形態論情報が、専門家によって人手で厳密に付与されているのに対し、<br>
-  「本サイトで公開するデータがクラウドソーシング等を使って専門家の手作業を介さず、非専門家の手によって作成されたものであり、公式のデータではない」<br>
-  という意図が込めてあります。<br><br>
-
-  意味合いは少々違いますが、現代日本語書き言葉均衡コーパス（BCCWJ）の「非コアデータ」のような言葉の使い方だと思ってください。<br><br>
-
-  また本サイトで公開するデータは、UniDic（v2.2.0以降）の標準出力もしくはmecab-dict-indexする前のlex.csv（v2.2.0以降）に適用するためのもので、<br><br>
-
-  短単位ID（語彙素IDや語彙表ID） + 追加情報<br><br>
-
-  のみの公開となります。UniDic自体は付属しません。<br><br>
-
-  短単位IDに関しては、<a href="https://unidic.ninjal.ac.jp/glossary#lid_and_lemma_id">このページ</a>を参照ください。<br>
-</p>
+<main>
+<div class="main_contents">
+	<div class="article_content">
+		<br>
+		<p>本サイトでは、短単位自動解析用辞書「<a href="https://unidic.ninjal.ac.jp/">UniDic</a>」のアペンドデータを</p>
+		<p>『<span class="article_text_enph">UniDic非コアデータ</span>』として公開しています。</p>
+	  	<br>
+		<p>「非コア」データというフレーズには、UniDicの短単位形態論情報が、専門家によって人手で厳密に付与されているのに対し、</p>
+		<p><span class="article_text_enph">「本サイトで公開するデータがクラウドソーシング等を使って専門家の手作業を介さず、非専門家の手によって作成されたものであり、公式のデータではない」</span></p>
+		<p>という意図が込めてあります。</p>
+		<p>意味合いは少々違いますが、現代日本語書き言葉均衡コーパス（BCCWJ）の「非コアデータ」のような言葉の使い方だと思ってください。</p>
+		<p>また本サイトで公開するデータは、UniDic（v2.2.0以降）の標準出力もしくはmecab-dict-indexする前のlex.csv（v2.2.0以降）に適用するためのもので、</p>
+		<p><span class="article_text_enph">短単位ID（語彙素IDや語彙表ID） + 追加情報</span></p>
+		<p>のみの公開となります。UniDic自体は付属しません。</p>
+		<p>短単位IDに関しては、<a href="https://unidic.ninjal.ac.jp/glossary#lid_and_lemma_id">このページ</a>を参照ください。</p>
+	</div>
 </div>
 
 
-<div>
-<h2>更新履歴</h2>
-	<hr>
-	<dl>
-		<dt>2019.01.15</dt>
-		<dd>
-			<p>
-        ・プレサイト完成<br>
-        ・「内部に原言語からの省略形を含むカタカナ語彙素のリスト」公開
-      </p>
-		</dd>
-	</dl>
-	<p><br></p>
+<div class="article">
+	<div class="article_title">
+			更新履歴
+	</div>
+	<div class="article_content">
+		<dl>
+            <dt>2019.08.15</dt>
+			<dd>
+				<p>
+			        ・サイトデザイン一旦完成<br>
+                    ・「内部に原言語からの省略形を含むカタカナ語彙素のリスト」の名称に年月を付与<br>
+			        ・「複数（２つ）の短単位に分割可能な複合語のリスト_2019_03」公開<br>
+                    ・「関連語リスト_2019_03」公開
+		         </p>
+			</dd>
+			<dt>2019.01.15</dt>
+			<dd>
+				<p>
+			        ・プレサイト完成<br>
+			        ・「内部に原言語からの省略形を含むカタカナ語彙素のリスト」公開
+		         </p>
+			</dd>
+		</dl>
+	</div>
 </div>
 
-<!--ページトップへのリンク-->
-<p><a href="#top">▲ページトップへ</a></p>
-<p><br></p>
 
-<div>
-	<h2>内部に原言語からの省略形を含むカタカナ語彙素のリスト</h2>
-	<hr>
-  <p><a href="https://github.com/teru-oka-1933/unidic_non_core/tree/master/abbreviation_2017_02">abbreviation_2017_02</a></p>
-	<ul>
-		<li>
-			<p>
-        パトカー = パト（patrol）カー（car）のように、原言語からの省略形を内部に含むカタカナ短単位語彙素のリスト<br><br>
-        リスト中の記法を使うと、<br>
-        パトカーの「パト」は「patorol」の省略形であるため「abbr」、<br>
-        パトカーの「カー」は「car」からの省略が起きていないので、「!abbr」マークが付けられる。<br><br>
-	<a href="https://github.com/teru-oka-1933/unidic_non_core/blob/master/LICENSE">ライセンス</a></href><br><br>
-        各ファイルの内容は以下の通り。
-      </p>
-			<ul>
-				<li><p>
-          1) abbr_src_2017_02.tsv<br>
-          　クラウドソーシングを使い、原言語からの省略が起きているかどうかアンケート調査した結果のrawデータ（非識別加工済み）<br>
-          クラウドソーシング上での設問はファイル中に記載。<br>
-	  少し大きいデータなので、zipに圧縮。
-        </p></li>
-	<li><p>
-          2) abbr_inter_2017_02.tsv<br>
-          　1)のデータを見やすく加工したもの。<br>
-        </p></li>
-        <li><p>
-          3) abbr_aggregaton_2017_02.tsv<br>
-          　1)2)のデータはユーザごとの個別の回答であるので、それを集計した結果。<br>
-          例）abbr:80、!abbr:20の場合、その語彙素の当該箇所が原言語からの省略形であるとみなしたユーザが80人、
-          そうではないとみなしたユーザが20人いたことを表している。
-        </p></li>
-        <li><p>
-          4) abbreviation_○○_2017_02.tsv<br>
-          　3)の集計結果から、abbrがabbr+!abbrの○○％以上になった箇所を原言語からの省略が起きているとみなし、
-          改めてabbrマークを付け（○○％未満は!abbr）、そのabbrマークを含むカタカナ語彙素だけを列挙したファイル。<br>
-          ○○％以上でないとabbrマークを付けていないため、基本的には!abbrに倒したデータとなっている。<br>
-          （ざっと見た様子では１００％や９０％よりも、８０％あたりのデータがよさげ）
-				</li>
-				<li>
-          5) 上記のような単純なvotingでなく、ユーザの質を考慮したクラウドソーシング集計用アルゴリズムを適用したデータを追加予定
-        </p></li>
-			</ul>
-		</li>
-	</ul>
-	<p><br></p>
+<div class="article">
+	<div class="article_title">
+		内部に原言語からの省略形を含むカタカナ語彙素のリスト_2017_02
+	</div>
+	<div class="article_content">
+		<p>パトカー = パト（patrol）カー（car）のように、原言語からの省略形を内部に含むカタカナ短単位語彙素のリスト。</p>
+		<p>リスト中の記法を使うと、</p>
+        <p>パトカーの「パト」は「patorol」の省略形であるため「abbr」、</p>
+        <p>対して、パトカーの「カー」は「car」からの省略は起きていないので、「!abbr」マークが付けられる。</p><br>
+
+		<p>リポジトリ：<a href="https://github.com/teru-oka-1933/unidic_non_core/tree/master/abbreviation_2017_02">abbreviation_2017_02</a></p>
+		<p><a href="https://github.com/teru-oka-1933/unidic_non_core/blob/master/LICENSE">ライセンス</a></p><br>
+
+        <p>リポジトリ内の各ファイルの内容は以下の通り。</p>
+	</div>
+	<div class="article_sub_title">１）abbr_src_2017_02.zip（展開 → abbr_src_2017_02.tsv）</div>
+	<div class="article_content">
+		<p>クラウドソーシングを使い、原言語からの省略が起きているかどうかアンケート調査した結果のrawデータ（非識別加工済み）。</p>
+		<p>各列名およびクラウドソーシング上での設問など詳細は、ファイル中に記載。</p>
+	  	<p>少し大きいデータなので、zip圧縮データ公開。</p>
+	</div>
+	<div class="article_sub_title">２）abbr_inter_2017_02.tsv</div>
+	<div class="article_content">
+		<p>1)のデータを見やすく加工したもの。</p>
+		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+	</div>
+	<div class="article_sub_title">３）abbr_aggregaton_2017_02.tsv</div>
+	<div class="article_content">
+		<p>1)2)のデータはユーザごとの個別の回答であるので、それを集計した結果。</p>
+        <p>例）abbr:80、!abbr:20の場合、</p>
+		<p>その語彙素の当該箇所が原言語からの省略形であるとみなしたユーザが80人、</p>
+        <p>そうではないとみなしたユーザが20人いたことを表している。</p>
+		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+	</div>
+	<div class="article_sub_title">４）abbreviation_○○_2017_02.tsv</div>
+	<div class="article_content">
+		<p>3)の集計結果から、abbrの値がabbr+!abbr中の○○％以上になった箇所で原言語からの省略が起きているとみなし、</p>
+		<p>改めて値なしのabbrマークだけを付与しなおし（○○％未満の場合!abbrマークだけ）、</p>
+		<p>付与しなおした中で、abbrマークを含む行だけを列挙したファイル。</p>
+		<p>（ざっと見た様子では１００％や９０％よりも、８０％あたりのデータがよさげ）</p>
+		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+	</div>
+	<div class="article_sub_sub_title">謝辞</div>
+	<div class="article_content">
+		<p>本研究は国立国語研究所の所長裁量経費の助成を受けたものです。</p>
+	</div>
 </div>
 
-<!--ページトップへのリンク-->
-<p><a href="#top">▲ページトップへ</a></p>
-<p><br></p>
 
-<div>
-	<h2>構成語情報</h2>
-	<hr>
-	<ul>
-		<li>
-			<p>公開予定</p>
-			<ul>
-				<li><p>しばらくお待ちください</p></li>
-			</ul>
-		</li>
-	</ul>
-	<p><br></p>
+<div class="article">
+	<div class="article_title">
+		複数（２つ）の短単位に分割可能な複合語のリスト_2019_03
+	</div>
+	<div class="article_content">
+        <p>短単位は１最小単位、もしくは複数の最小単位の結合からなる単位である。</p>
+        <p>（最小単位と短単位の関係については<a href="https://unidic.ninjal.ac.jp/glossary#suw">UniDic公式ページ</a>を参照）</p>
+		<p>そのため１短単位であっても複数の最小単位の結合からなっている場合、その最小単位それぞれが別個の短単位としてUniDicDBに登録されていることがある。</p>
+        <p>例：（）は語彙素ID</p>
+        <ul>
+            <li>走り過ぎる（90675）　→　走る（29712）　過ぎる（19108）</li>
+            <li>夢見る（38909）　→　夢（38906）　見る（36920）</li>
+        </ul>
+        <p>
+            本データは、上のような複数短単位に分割可能な短単位のうち、"２短単位"に分割可能なものを自動形態素解析によって候補に挙げ、
+            クラウドソーシングを使ってその分割が正しいか否かを選別したリストである。
+        </p><br>
+
+		<p>リポジトリ：<a href="https://github.com/teru-oka-1933/unidic_non_core/tree/master/constitute_2019_03">constitute_2019_03</a></p>
+		<p><a href="https://github.com/teru-oka-1933/unidic_non_core/blob/master/LICENSE">ライセンス</a></p><br>
+
+        <p>リポジトリ内の各ファイルの内容は以下の通り。</p>
+	</div>
+	<div class="article_sub_title">１）cons_src_2019_03.zip（展開 → cons_src_2019_03.tsv）</div>
+	<div class="article_content">
+		<p>
+            自動形態素解析によって２短単位に分割した短単位を、
+            分割の確信度に基づき並び替え、
+            上位のもの（確信度が高い分割）を抜き出し、
+            その分割が正しいか否かクラウドソーシングを使ってアンケート調査した結果のrawデータ（非識別加工済み）。
+        </p>
+		<p>各列名およびクラウドソーシング上での設問など詳細は、ファイル中に記載。</p>
+	  	<p>少し大きいデータなので、zip圧縮データ公開。</p>
+	</div>
+	<div class="article_sub_title">２）cons_all_2019_03.tsv</div>
+	<div class="article_content">
+		<p>
+            1)のデータに対し、クラウドソーシングの品質評価手法（Multi-class 版の GLAD：[Whitehill+ 09]の多クラス拡張）を適用し、
+            各分割に行われた人手の判定に確率で確信度（0.0～1.0）を与えたもの。
+        </p>
+		<p>列詳細はファイル中に記載。</p>
+	</div>
+    	<div class="article_sub_title">３）constituent_○.○_2019_03.tsv</div>
+	<div class="article_content">
+		<p>2)の集計結果から、確信度が○.○以上の分割の行だけを列挙したファイル。</p>
+		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+	</div>
+	<div class="article_sub_sub_title">謝辞</div>
+	<div class="article_content">
+		<p>本研究は国立国語研究所の所長裁量経費の助成を受けたものです。</p>
+	</div>
 </div>
 
-<!--ページトップへのリンク-->
-<p><a href="#top">▲ページトップへ</a></p>
-<p><br></p>
+<div class="article">
+	<div class="article_title">
+		関連語リスト_2019_03
+	</div>
+	<div class="article_content">
+        <p>同義や、類義、包含など、意味的に近しい関係を持つ（と思われる）字面の近しい短単位ペアのリスト。</p>
+        <p>例：（）は語彙素ID</p>
+        <ul>
+            <li>アレンジメント-arrangement（1285）　アレンジ-arrange（1284）</li>
+            <li>読み聞かせる（174056）　読み聞かす（191472）</li>
+            <li>笑い声（41331）　笑う（41336）</li>
+        </ul>
+	</div><br>
 
-<div>
-	<h2>関連語情報</h2>
-	<hr>
-	<ul>
-		<li>
-			<p>公開予定</p>
-			<ul>
-				<li><p>しばらくお待ちください</p></li>
-			</ul>
-		</li>
-	</ul>
-	<p><br></p>
-</div>
+		<p>リポジトリ：<a href="https://github.com/teru-oka-1933/unidic_non_core/tree/master/reference_2019_03">reference_2019_03</a></p>
+		<p><a href="https://github.com/teru-oka-1933/unidic_non_core/blob/master/LICENSE">ライセンス</a></p><br>
 
-<p><br></p>
+        <p>リポジトリ内の各ファイルの内容は以下の通り。</p>
+	</div>
+	<div class="article_sub_title">１）ref_src_2019_03.zip（展開 → ref_src_2019_03.tsv）</div>
+	<div class="article_content">
+		<ul>
+            <li>片方の短単位がもう片方の短単位と全前方完全一致する</li>
+            <li>２つの短単位の先頭文字列が一致する</li>
+            <li>２つの短単位間の編集距離が近い</li>
+        </ul>
+        <p>
+            上のような短単位のペアをランダムに取り出し、
+            取り出したペアが"似たような意味を持つか否か？"
+            クラウドソーシングを使ってアンケート調査した結果のrawデータ（非識別加工済み）。
+        </p>
+		<p>各列名およびクラウドソーシング上での設問など詳細は、ファイル中に記載。</p>
+	  	<p>少し大きいデータなので、zip圧縮データ公開。</p>
+	</div>
+	<div class="article_sub_title">２）ref_all_2019_03.tsv</div>
+	<div class="article_content">
+		<p>
+            1)のデータに対し、クラウドソーシングの品質評価手法（Multi-class 版の GLAD：[Whitehill+ 09]の多クラス拡張）を適用し、
+            各分割に行われた人手の判定に確率で確信度（0.0～1.0）を与えたもの。
+        </p>
+		<p>列詳細はファイル中に記載。</p>
+	</div>
+    	<div class="article_sub_title">３）reference_○.○_2019_03.tsv</div>
+	<div class="article_content">
+		<p>2)の集計結果から、確信度が○.○以上の分割の行だけを列挙したファイル。</p>
+		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+	</div>
+	<div class="article_sub_sub_title">謝辞</div>
+	<div class="article_content">
+		<p>本研究は国立国語研究所の所長裁量経費の助成を受けたものです。</p>
+	</div>
+<br>
+</main>
 
-<!--ページトップへのリンク-->
-<p><a href="#top">▲ページトップへ</a></p>
-<p><br></p>
+<!--=========================== footer ===========================-->
+<footer id="footer">
+	<div id="footer_content">
+			<!-- validator -->
+			<p id="footer_validator">
+				<a href="https://validator.w3.org/check?uri=referer">
+					<img
+					src='https://www.w3.org/html/logo/downloads/HTML5_Badge_32.png'
+					alt="Valid HTML5" /></a>
+				<a href="https://jigsaw.w3.org/css-validator/check/referer">
+					<img style="border:0;width:88px;height:31px"
+					src="https://jigsaw.w3.org/css-validator/images/vcss"
+					alt="Valid CSS" /></a>
+			</p>
+			<!-- /validator -->
+	</div>
+</footer>
 
 </body>
 
