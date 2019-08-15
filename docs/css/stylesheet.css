@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* =============================================== 共通 ===================================================== */
+
+/* ========================== html ========================== */
+html {
+    background-color: #cccccc;
+    font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", Osaka, Arial, Verdana, "ＭＳ Ｐゴシック", sans-serif;
+}
+/* ========================== /html ========================== */
+
+
+/* ========================== body ========================== */
+body {
+    background-image: url(../image/title_back.png);
+    white-space: nowrap;
+    margin: 0 auto 0 auto;
+    /* 画面幅せばめたときに，htmlの色が食い込んでくるのを止める用， */
+    width: 1000px;
+    min-width: 1000px;
+}
+/* ========================== /body ========================== */
+
+/* ========================== header ========================== */
+#overline {
+    background-image: url(../image/overline_46_46_46.png);
+    height: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 750px;
+}
+
+header {
+    background-image: url(../image/title_back.png);
+    width: 900px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* ========================== /header ========================== */
+
+
+
+/* ========================== main ========================== */
+main {
+    background-color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+#main_contents {
+    width: 900px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    padding-top: 1px;
+}
+/* ========================== /main ========================== */
+
+
+
+/* ========================== article ========================== */
+
+.article {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+
+/*.article_title {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    background-color: #ff3300;
+    font-size: 20px;
+    color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+}*/
+
+.article_title {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+    font-size: 24px;
+    color: #494949;
+    border-width: 7px;
+    border-top-style: solid;
+    border-top-color: #666699;
+}
+
+.article_sub_title {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    background-color: #dcdcdc;
+    border-color: #dcdcdc;
+    font-size: 18px;
+    color: #333333;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.article_sub_sub_title {
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 13px;
+    padding-bottom: 5px;
+    background-color: #636b70;
+    font-size: 16px;
+    color: #ffffff;
+    border-color: #636b70;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.article_content {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    white-space: normal;
+    color: #494949;
+    line-height: 1.8em;
+    letter-spacing: 0.6pt;
+    font-size: 1em;
+}
+
+.article_text_enph {
+    color:#050505;
+}
+
+/* ========================== /article ========================== */
+
+/* ========================== footer ========================== */
+footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: url(../image/title_back.png);
+    color: #ffffff;
+}
+
+#footer_content {
+    width: 900px;
+    min-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer_validator {
+    padding-left: 380px;
+}
+/* ========================== /footer ========================== */
+
+
+/* =============================================== /共通 ===================================================== */
+
+
+
