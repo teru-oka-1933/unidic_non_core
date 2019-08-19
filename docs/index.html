@@ -29,7 +29,7 @@
 		<p><span class="article_text_enph">「本サイトで公開するデータがクラウドソーシング等を使って専門家の手作業を介さず、非専門家の手によって作成されたものであり、公式のデータではない」</span></p>
 		<p>という意図が込めてあります。</p>
 		<p>意味合いは少々違いますが、現代日本語書き言葉均衡コーパス（BCCWJ）の「非コアデータ」のような言葉の使い方だと思ってください。</p>
-		<p>また本サイトで公開するデータは、UniDic（v2.2.0以降）の標準出力もしくはmecab-dict-indexする前のlex.csv（v2.2.0以降）に適用するためのもので、</p>
+		<p>また本サイトで公開するデータは、解析用UniDic（v2.2.0以降）の標準出力もしくはmecab-dict-indexする前のlex.csv（v2.2.0以降）に適用するためのもので、</p>
 		<p><span class="article_text_enph">短単位ID（語彙素IDや語彙表ID） + 追加情報</span></p>
 		<p>のみの公開となります。UniDic自体は付属しません。</p>
 		<p>短単位IDに関しては、<a href="https://unidic.ninjal.ac.jp/glossary#lid_and_lemma_id">このページ</a>を参照ください。</p>
@@ -64,7 +64,7 @@
 </div>
 
 
-<div class="article">
+<div class="article" id="abbreviation_2017_02">
 	<div class="article_title">
 		内部に原言語からの省略形を含むカタカナ語彙素のリスト_2017_02
 	</div>
@@ -88,7 +88,7 @@
 	<div class="article_sub_title">２）abbr_inter_2017_02.tsv</div>
 	<div class="article_content">
 		<p>1)のデータを見やすく加工したもの。</p>
-		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+		<p列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
 	<div class="article_sub_title">３）abbr_aggregaton_2017_02.tsv</div>
 	<div class="article_content">
@@ -96,7 +96,7 @@
         <p>例）abbr:80、!abbr:20の場合、</p>
 		<p>その語彙素の当該箇所が原言語からの省略形であるとみなしたユーザが80人、</p>
         <p>そうではないとみなしたユーザが20人いたことを表している。</p>
-		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+		<p>列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
 	<div class="article_sub_title">４）abbreviation_○○_2017_02.tsv</div>
 	<div class="article_content">
@@ -104,7 +104,7 @@
 		<p>改めて値なしのabbrマークだけを付与しなおし（○○％未満の場合!abbrマークだけ）、</p>
 		<p>付与しなおした中で、abbrマークを含む行だけを列挙したファイル。</p>
 		<p>（ざっと見た様子では１００％や９０％よりも、８０％あたりのデータがよさげ）</p>
-		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+		<p>列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
 	<div class="article_sub_sub_title">謝辞</div>
 	<div class="article_content">
@@ -113,7 +113,7 @@
 </div>
 
 
-<div class="article">
+<div class="article" id="constitute_2019_03">
 	<div class="article_title">
 		複数（２つ）の短単位に分割可能な複合語のリスト_2019_03
 	</div>
@@ -153,12 +153,12 @@
             1)のデータに対し、クラウドソーシングの品質評価手法（Multi-class 版の GLAD：[Whitehill+ 09]の多クラス拡張）を適用し、
             各分割に行われた人手の判定に確率で確信度（0.0～1.0）を与えたもの。
         </p>
-		<p>列詳細はファイル中に記載。</p>
+		<p>列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
     	<div class="article_sub_title">３）constituent_○.○_2019_03.tsv</div>
 	<div class="article_content">
 		<p>2)の集計結果から、確信度が○.○以上の分割の行だけを列挙したファイル。</p>
-		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+		<p>列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
 	<div class="article_sub_sub_title">謝辞</div>
 	<div class="article_content">
@@ -166,7 +166,7 @@
 	</div>
 </div>
 
-<div class="article">
+<div class="article" id="reference_2019_03">
 	<div class="article_title">
 		関連語リスト_2019_03
 	</div>
@@ -206,12 +206,12 @@
             1)のデータに対し、クラウドソーシングの品質評価手法（Multi-class 版の GLAD：[Whitehill+ 09]の多クラス拡張）を適用し、
             各分割に行われた人手の判定に確率で確信度（0.0～1.0）を与えたもの。
         </p>
-		<p>列詳細はファイル中に記載。</p>
+		<p>列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
     	<div class="article_sub_title">３）reference_○.○_2019_03.tsv</div>
 	<div class="article_content">
 		<p>2)の集計結果から、確信度が○.○以上の分割の行だけを列挙したファイル。</p>
-		<p>列詳細はファイルヘッダー部のコメント中に記載。</p>
+		<p>列詳細はファイル内ヘッダー部のコメント中に記載。</p>
 	</div>
 	<div class="article_sub_sub_title">謝辞</div>
 	<div class="article_content">
